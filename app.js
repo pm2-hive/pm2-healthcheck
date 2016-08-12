@@ -20,8 +20,8 @@ pmx.initModule({
     theme            : ['#39bdb1', '#1B2228', 'white', '#807C7C'],
 
     block : {
-      issues  : true,
-      meta : true,
+      issues  : false,
+      meta : true
     }
   }
 }, function(err, conf) {

@@ -36,6 +36,6 @@
   ],
   "config": {
     "workerInterval": 2,
-    "urls": "google.fr"
+    "urls": "http://google.fr"
   }
 }
