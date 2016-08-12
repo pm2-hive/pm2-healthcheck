@@ -9,12 +9,9 @@ var Probe       = pmx.probe();
 var Worker      = require('./lib/worker');
 
 pmx.initModule({
-
-  pid              : pmx.resolvePidPaths(['/var/run/elasticsearch/elasticsearch.pid',
-                                          '/var/run/elasticsearch.pid']),
   widget : {
     type             : 'generic',
-    logo             : 'https://www.elastic.co/static/img/logo-elastic.png',
+    logo             : 'https://raw.githubusercontent.com/pm2-hive/pm2-healthcheck/master/pres/health-check.png',
 
     // 0 = main element
     // 1 = secondary
@@ -22,15 +19,9 @@ pmx.initModule({
     // 3 = secondary border
     theme            : ['#39bdb1', '#1B2228', 'white', '#807C7C'],
 
-    el : {
-      probes  : true,
-      actions : true
-    },
-
     block : {
       issues  : true,
       meta : true,
-      main_probes : ['Elastic status', 'Nodes', 'Shards', 'Indices', 'Documents', 'Store size']
     }
   }
 }, function(err, conf) {
